@@ -1,2 +1,2 @@
 # Learn_React
-Curso de React
+Curso de React-Augusto Mera
