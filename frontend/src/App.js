@@ -12,13 +12,16 @@ function App() {
   return (
     <BrowserRouter>
       <Navigation/>
-    
+
     <Routes>
 
-          <Route path='/' exact element={<NotesList/>} />
-          <Route path='/edit/:id' element={<Editroute/>} />
-          <Route path='/create' element={<CreateNote/>} />
-          <Route path='/user' element={<CreateUser/>} />
+           
+            <Route path='/' exact element={<NotesList/>} />
+            <Route path='/edit/:id' element={<Editroute/>} />
+            <Route path='/create' element={<CreateNote/>} />
+            <Route path='/user' element={<CreateUser/>} />
+         
+
     </Routes>
     </BrowserRouter>
 
