@@ -8,21 +8,22 @@ import CreateNote from './components/CreateNote'
 import CreateUser from './components/CreateUser'
 
 function App() {
-  const Editroute = () => <CreateNote params={useParams()} />;
+  const Editroute = () => <CreateNote params={useParams()} />;
   return (
     <BrowserRouter>
-      <Navigation/>
+      <Navigation />
+      <div className="container p-4">
+        <Routes>
 
-    <Routes>
 
-           
-            <Route path='/' exact element={<NotesList/>} />
-            <Route path='/edit/:id' element={<Editroute/>} />
-            <Route path='/create' element={<CreateNote/>} />
-            <Route path='/user' element={<CreateUser/>} />
-         
+          <Route path='/' exact element={<NotesList />} />
+          <Route path='/edit/:id' element={<Editroute />} />
+          <Route path='/create' element={<CreateNote />} />
+          <Route path='/user' element={<CreateUser />} />
 
-    </Routes>
+
+        </Routes>
+      </div>
     </BrowserRouter>
 
   );
